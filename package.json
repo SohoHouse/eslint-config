@@ -1,6 +1,6 @@
 {
   "name": "@sohohouse/eslint-config",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Shared eslint config for Soho House",
   "main": "index.js",
   "repository": "https://github.com/SohoHouse/eslint-config",
@@ -8,7 +8,7 @@
   "author": "software-devs@sohohouse.com",
   "dependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-airbnb": "^18.0.1",
     "eslint-import-resolver-jest": "https://github.com/samtgarson/eslint-import-resolver-jest",
     "eslint-plugin-html": "^3.2.0",
     "eslint-plugin-import": "^2.7.0",
