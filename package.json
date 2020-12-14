@@ -6,6 +6,9 @@
   "repository": "https://github.com/SohoHouse/eslint-config",
   "license": "MIT",
   "author": "software-devs@sohohouse.com",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/sohohouse"
+  },
   "dependencies": {
     "babel-eslint": "^7.2.3",
     "eslint-config-airbnb": "^18.0.1",
