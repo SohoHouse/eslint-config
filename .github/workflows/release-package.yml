@@ -1,8 +1,13 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - master
+
+concurrency:
+   group: ${{ github.workflow }}-${{ github.ref }}
+   cancel-in-progress: ${{ (github.ref != format('refs/heads/{0}', github.event.repository.default_branch)) }}
 
 jobs:
   publish-gpr:
