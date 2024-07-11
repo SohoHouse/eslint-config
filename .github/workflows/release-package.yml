@@ -27,8 +27,8 @@ jobs:
       - name: Get version
         id: tag_version
         run: |
-          echo "::set-output name=version::$(node -p "require('./package.json').version")"
-          echo "::set-output name=description::$(node -p "require('./package.json').description")"
+          echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
+          echo "description=$(node -p "require('./package.json').description")" >> $GITHUB_OUTPUT
       - name: Create a GitHub release
         uses: ncipollo/release-action@v1
         with:
